@@ -823,6 +823,8 @@ def _plot_volume_profile_plotly(df: pd.DataFrame, bins: int = 20) -> go.Figure:
         )
         
         return fig
+    except Exception:
+        return go.Figure()
 
 
 def _plot_volume_profile_matplotlib(df: pd.DataFrame, bins: int = 20):
